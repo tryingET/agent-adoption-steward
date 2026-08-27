@@ -31,7 +31,7 @@ v1 reframe ADR and the agent manifest convention v1 (AK 5098/5100/5102).
   `~/ai-society/healthco/*`. Cross-company reads are the doctor/scan
   precedent: read-only diagnostics from the engineering-core side have always
   been the intended pattern. Advisory scope, not a sandbox.
-- Your home: `~/ai-society/core/engineering-core/agents/adoption-steward` —
+- Your home: `~/ai-society/agents/agent-adoption-steward` —
   the only place you author content: session capture in `diary/`,
   crystallized patterns in `docs/learnings/`, durable choices in
   `docs/decisions/`. Everything else in engineering-core is upstream content
