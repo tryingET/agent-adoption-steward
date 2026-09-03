@@ -1,0 +1,58 @@
+{
+  "ambient_resources": false,
+  "apply": false,
+  "extensions": [
+    "pi-autonomous-session-control"
+  ],
+  "jurisdiction": "society",
+  "known_current_conflicts": [
+    {
+      "current_claim": "home follows engineering-core product affinity and profile is null",
+      "path": "README.md",
+      "target_claim": "home follows society appointment; exact least-privilege profile is ec-adoption-steward"
+    },
+    {
+      "current_claim": "profile ec-full and bash tool",
+      "path": "agent.json",
+      "target_claim": "ec-adoption-steward and read-only first pilot"
+    }
+  ],
+  "profile": "engineering-core/ec-adoption-steward",
+  "profile_members": [
+    "ec-discipline-dependency-governance",
+    "ec-discipline-documentation",
+    "ec-discipline-security-privacy",
+    "ec-discipline-testing",
+    "ec-discipline-validation"
+  ],
+  "rollback": [
+    "retain schema-1 file",
+    "keep registry schema-1 reader enabled",
+    "disable strict pilot feature flag",
+    "do not alter live agent activation"
+  ],
+  "schema": "agent-adoption-steward.migration-plan/1",
+  "session": "fresh",
+  "source_revision": "git:dc354723482f0470ad287d1de3e067a72cd99a85",
+  "stable_agent_id": null,
+  "steps": [
+    "inspect schema-1 bytes",
+    "render schema-2 candidate in scratch",
+    "compare persona projection",
+    "validate exact provider resources",
+    "review diff",
+    "explicit owner apply only after Gate A"
+  ],
+  "target_home": "~/ai-society/agents/agent-adoption-steward",
+  "target_schema": "ai-society.agent/2",
+  "task_scoped_additions": "owner must name exact target-lane additions in the pilot task permit",
+  "tools": [
+    "read"
+  ],
+  "owner_decisions_required": [
+    "select the stable agent_id UUID",
+    "bind the accountable appointment/owner reference",
+    "name the exact Stage B pilot task and task-scoped target-lane additions",
+    "bind the exact machine/workspace and short validity interval"
+  ]
+}
