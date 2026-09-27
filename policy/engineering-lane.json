@@ -11,8 +11,15 @@
     "lane_status": "no_language_lane",
     "list_disciplines_command": "engineering-core list-disciplines",
     "list_templates_command": "engineering-core list-templates",
-    "ref": "workspace-local-unpinned",
+    "ref": "v0.12.2",
     "schema_version": "1",
-    "tool": "engineering-core"
+    "tool": "engineering-core",
+    "repository": "https://github.com/tryingET/core_engineering-core",
+    "release_pin": {
+      "kind": "git-commit",
+      "ref": "v0.12.2",
+      "resolved_commit": "27ff32a529b6da6b27051e97fdb1d95a0a9be4ae",
+      "source": "git+https://github.com/tryingET/core_engineering-core.git@27ff32a529b6da6b27051e97fdb1d95a0a9be4ae"
+    }
   }
 }
