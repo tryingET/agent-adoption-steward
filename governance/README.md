@@ -1,32 +1,29 @@
 ---
-summary: "AK projection and task-scope guidance for generated agent product repositories."
+summary: "Work authority for agent-adoption-steward: the Agent Kernel DB; the checked-in work-items projection is retired."
 read_when:
-type: "reference"
+  - "Routing active or deferred work for this repo"
+  - "Considering a checked-in work-items file"
 ---
 
-# Governance
+# Governance — agent-adoption-steward
 
+Deferred and active work for this repo lives in the **Agent Kernel DB** (`ak task ...`).
+The AK DB is the sole work authority; no checked-in work-items projection exists or should be reintroduced.
 
-## Workflow
+The retired `governance/work-items.json` projection carried no task items (empty
+`milestones`); nothing was lost at retirement.
 
-```bash
-```
+## Optional explicit task-scope snapshots
 
-Do not repair drift by hand-editing JSON and pretending it is authoritative.
+When a task needs explicit scope:
 
-## Explicit task-scope snapshots
+- author/update the scope in AK via `ak task scope show|set|update ...`
+- keep repo-side copies under `governance/task-scopes/AK-<TASK-ID>.snapshot.json` as frozen exports
+- refresh a checked-in snapshot with `mkdir -p governance/task-scopes && ak task scope export <TASK-ID> > governance/task-scopes/AK-<TASK-ID>.snapshot.json`
+- verify checked-in snapshots with `./scripts/check-task-scope-snapshots.sh` before commit or in CI
 
-```bash
-mkdir -p governance/task-scopes
-ak task scope export <TASK-ID> > governance/task-scopes/AK-<TASK-ID>.snapshot.json
-./scripts/check-task-scope-snapshots.sh
-```
+## Non-negotiable
 
-Snapshots are frozen AK exports. They do not appoint the agent, grant delegation, or replace live task scope.
-
-## Optional schema validation
-
-```bash
-```
-
-Missing required AK access fails closed. Cross-repo coordination belongs in FCOS only when a genuine cross-owner gate exists.
+- Do not leave deferred work as ad-hoc TODO comments or scattered markdown notes.
+- Do not reintroduce a checked-in `governance/work-items.json` projection; the AK DB is authoritative.
+- Do not hand-author `governance/task-scopes/AK-*.snapshot.json` as if it were the live task-scope source of truth.
